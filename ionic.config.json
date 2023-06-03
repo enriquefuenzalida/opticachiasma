@@ -1,0 +1,7 @@
+{
+  "name": "opticachiasma",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
