@@ -1,0 +1,92 @@
+<ion-menu contentId="main-content">
+  <ion-content class="ion-padding">
+    <ion-list>
+      <ion-item [routerLink]="['/categoriaa']" >Categoría A</ion-item>
+      <ion-item [routerLink]="['/categoriab']" >Categoría B</ion-item>
+      <ion-item [routerLink]="['/categoriac']" >Categoría C</ion-item>
+      <ion-item [routerLink]="['/categoriad']" >Categoría D</ion-item>
+      <ion-item [routerLink]="['/categoriaf']" >Categoría F</ion-item>
+    </ion-list>
+  </ion-content>
+  <ion-footer class="ion-padding">
+    <ion-menu-toggle>
+      <ion-title size="large">Cerrar</ion-title></ion-menu-toggle>
+  </ion-footer>
+</ion-menu>
+
+<ion-header class="ion-text-center">
+  <ion-toolbar>
+    <ion-title><img src="../assets/imaginaciones/logotipo_corporativo-internacionalista.png" style="max-height: 89px;"/></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding" id="main-content">
+
+  <ion-title size="large">Categoría E</ion-title>
+
+  <ion-list lines="full" [inset]="true">
+    <ion-reorder-group [disabled]="false" (ionItemReorder)="handleReorder($any($event))">
+    <ion-item>
+      <ion-label>Noticia E1</ion-label>
+      <ion-checkbox></ion-checkbox>
+      <ion-buttons slot="end">
+        <ion-button ion-button clear [routerLink]=""><ion-icon name="create"></ion-icon></ion-button>
+        <ion-button ion-button clear [routerLink]=""><ion-icon name="trash"></ion-icon></ion-button>
+      </ion-buttons>
+      <ion-reorder slot="end"></ion-reorder>
+    </ion-item>
+    <ion-item>
+      <ion-label>Noticia E2</ion-label>
+      <ion-checkbox></ion-checkbox>
+      <ion-buttons slot="end">
+        <ion-button ion-button clear [routerLink]=""><ion-icon name="create"></ion-icon></ion-button>
+        <ion-button ion-button clear [routerLink]=""><ion-icon name="trash"></ion-icon></ion-button>
+      </ion-buttons>
+      <ion-reorder slot="end"></ion-reorder>
+    </ion-item>
+    <ion-item>
+      <ion-label>Noticia E3</ion-label>
+      <ion-checkbox></ion-checkbox>
+      <ion-buttons slot="end">
+        <ion-button ion-button clear [routerLink]=""><ion-icon name="create"></ion-icon></ion-button>
+        <ion-button ion-button clear [routerLink]=""><ion-icon name="trash"></ion-icon></ion-button>
+      </ion-buttons>
+      <ion-reorder slot="end"></ion-reorder>
+    </ion-item>
+    <ion-item>
+      <ion-label>Noticia E4</ion-label>
+      <ion-checkbox></ion-checkbox>
+      <ion-buttons slot="end">
+        <ion-button ion-button clear [routerLink]=""><ion-icon name="create"></ion-icon></ion-button>
+        <ion-button ion-button clear [routerLink]=""><ion-icon name="trash"></ion-icon></ion-button>
+      </ion-buttons>
+      <ion-reorder slot="end"></ion-reorder>
+    </ion-item>
+    <ion-item>
+      <ion-label>Noticia E5</ion-label>
+      <ion-checkbox></ion-checkbox>
+      <ion-buttons slot="end">
+        <ion-button ion-button clear [routerLink]=""><ion-icon name="create"></ion-icon></ion-button>
+        <ion-button ion-button clear [routerLink]=""><ion-icon name="trash"></ion-icon></ion-button>
+      </ion-buttons>
+      <ion-reorder slot="end"></ion-reorder>
+    </ion-item>
+    <ion-item>
+      <ion-label>Noticia E6</ion-label>
+      <ion-checkbox></ion-checkbox>
+      <ion-buttons slot="end">
+        <ion-button ion-button clear [routerLink]=""><ion-icon name="create"></ion-icon></ion-button>
+        <ion-button ion-button clear [routerLink]=""><ion-icon name="trash"></ion-icon></ion-button>
+      </ion-buttons>
+      <ion-reorder slot="end"></ion-reorder>
+    </ion-item>
+    </ion-reorder-group>
+  </ion-list>
+
+</ion-content>
+
+<ion-footer collapse="fade" class="ion-text-center">
+  <ion-toolbar>
+    <ion-title slot="start" [routerLink]="['/home']">Inicio</ion-title><ion-menu-toggle><ion-title>Otras categorías</ion-title></ion-menu-toggle>
+  </ion-toolbar>
+</ion-footer>
