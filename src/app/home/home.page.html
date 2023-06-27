@@ -3,22 +3,27 @@
     <ion-title style="text-align: center;">
       <img src="../assets/imaginaciones/logotipo_corporativo-internacionalista.png" style="max-height: 144px; margin:0 auto;"/>
     </ion-title>
-    <h4 *ngIf="data" style="text-align: center;">Usted ingresó con el nombre <em>{{ data }}</em></h4>
-    <h4 *ngIf="!data" style="text-align: center;">Usted ingresó sin nombre</h4>
+    <h4 [hidden]="!(data.trim().length === 0)" style="text-align: center;">Usted ingresó sin nombre</h4>
+    <h4 [hidden]="(data.trim().length === 0)" style="text-align: center;">Usted ingresó con el nombre <em>{{ data }}</em></h4>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true" class="ion-padding" id="main-content">
-  
-  <h3>Categorías</h3>
+
+  <h3>Menú</h3>
   <ion-grid id="portadaGrid">
     <ion-row>
-      <ion-col [routerLink]="['/categoriaa']" size="auto" size-xl="2" size-lg="3" size-xs="6">A</ion-col>
-      <ion-col [routerLink]="['/categoriab']" size="auto" size-xl="2" size-lg="3" size-xs="6">B</ion-col>
-      <ion-col [routerLink]="['/categoriac']" size="auto" size-xl="2" size-lg="3" size-xs="6">C</ion-col>
-      <ion-col [routerLink]="['/categoriad']" size="auto" size-xl="2" size-lg="3" size-xs="6">D</ion-col>
-      <ion-col [routerLink]="['/categoriae']" size="auto" size-xl="2" size-lg="3" size-xs="6">E</ion-col>
-      <ion-col [routerLink]="['/categoriaf']" size="auto" size-xl="2" size-lg="3" size-xs="6">F</ion-col>
+      <ion-col [routerLink]="['/categoriaa']" size="auto" size-xl="2" size-lg="3" size-xs="6"><h3>JSON local</h3><h2>Categoría A</h2></ion-col>
+      <ion-col [routerLink]="['/categoriab']" size="auto" size-xl="2" size-lg="3" size-xs="6"><h3>JSON local</h3><h2>Categoría B</h2></ion-col>
+      <ion-col [routerLink]="['/categoriac']" size="auto" size-xl="2" size-lg="3" size-xs="6"><h3>JSON local</h3><h2>Categoría C</h2></ion-col>
+      <ion-col [routerLink]="['/categoriad']" size="auto" size-xl="2" size-lg="3" size-xs="6"><h3>JSON local</h3><h2>Categoría D</h2></ion-col>
+      <ion-col [routerLink]="['/categoriae']" size="auto" size-xl="2" size-lg="3" size-xs="6"><h3>JSON local</h3><h2>Categoría E</h2></ion-col>
+      <ion-col [routerLink]="['/categoriaf']" size="auto" size-xl="2" size-lg="3" size-xs="6"><h3>JSON local</h3><h2>Categoría F</h2></ion-col>
+      <ion-col [routerLink]="['/externapi']" size="auto" size-xl="2" size-lg="3" size-xs="6"><h3>JSON externo</h3><h2>Typicode Posteos</h2></ion-col>
+      <ion-col [routerLink]="['/externapidos']" size="auto" size-xl="2" size-lg="3" size-xs="6"><h3>JSON externo</h3><h2>Typicode Comentarios</h2></ion-col>
+      <ion-col [routerLink]="['/sqliteintento']" size="auto" size-xl="2" size-lg="3" size-xs="6"><h3>SQLite</h3><h2>Intento</h2></ion-col>
+      <ion-col [routerLink]="['/fotoshot']" size="auto" size-xl="2" size-lg="3" size-xs="6"><h3>Cámara Captura</h3><h2>Fotoshot</h2></ion-col>
     </ion-row>
   </ion-grid>
+
 </ion-content>

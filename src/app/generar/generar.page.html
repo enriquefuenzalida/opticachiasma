@@ -1,0 +1,36 @@
+
+<ion-header class="ion-text-center">
+  <ion-toolbar>
+    <ion-title><img src="../assets/imaginaciones/logotipo_corporativo-internacionalista.png" style="max-height: 89px;"/></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <ion-title size="large" class="ion-padding">Noticia Inserción</ion-title>
+
+  <ion-item>
+    <ion-label label="Titulo" position="floating">Noticia Titulo</ion-label>
+    <ion-input aria-label="Titulo" type="text" [(ngModel)]="notcTitulo"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label label="Categoria" position="floating">Noticia Categoría</ion-label>
+    <ion-input aria-label="Categoria" [(ngModel)]="notcCategoria" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label label="Texto" position="floating">Noticia Texto</ion-label>
+    <ion-input aria-label="Texto" type="text" [(ngModel)]="notcContenido" ></ion-input>
+  </ion-item>
+
+  <ion-button shape="block" (click)="insertar()">Guardar</ion-button>
+
+</ion-content>
+
+<ion-footer collapse="fade" class="ion-text-center">
+  <ion-toolbar>
+    <ion-title slot="start" [routerLink]="['/home']">Inicio</ion-title> <ion-title (click)="myBackButton()">Volver</ion-title>
+  </ion-toolbar>
+</ion-footer>

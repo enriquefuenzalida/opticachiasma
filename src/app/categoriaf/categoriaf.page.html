@@ -1,11 +1,15 @@
 <ion-menu contentId="main-content">
   <ion-content class="ion-padding">
+    <ion-title class="ion-padding">Menú</ion-title>
     <ion-list>
-      <ion-item [routerLink]="['/categoriaa']" >Categoría A</ion-item>
-      <ion-item [routerLink]="['/categoriab']" >Categoría B</ion-item>
-      <ion-item [routerLink]="['/categoriac']" >Categoría C</ion-item>
-      <ion-item [routerLink]="['/categoriad']" >Categoría D</ion-item>
-      <ion-item [routerLink]="['/categoriae']" >Categoría E</ion-item>
+      <ion-item [routerLink]="['/categoriaa']" >JSON Interno Categoría A</ion-item>
+      <ion-item [routerLink]="['/categoriab']" >JSON Interno Categoría B</ion-item>
+      <ion-item [routerLink]="['/categoriac']" >JSON Interno Categoría C</ion-item>
+      <ion-item [routerLink]="['/categoriad']" >JSON Interno Categoría D</ion-item>
+      <ion-item [routerLink]="['/categoriae']" >JSON Interno Categoría E</ion-item>
+      <ion-item [routerLink]="['/externapi']">JSON Externo Typecode Posteos</ion-item>
+      <ion-item [routerLink]="['/sqliteintento']">SQLite Intento</ion-item>
+      <ion-item [routerLink]="['/fotoshot']">Cámara Foto Captura</ion-item>
     </ion-list>
   </ion-content>
   <ion-footer class="ion-padding">
@@ -22,71 +26,24 @@
 
 <ion-content [fullscreen]="true" class="ion-padding" id="main-content">
 
-  <ion-title size="large">Categoría F</ion-title>
+  <ion-title size="large" class="ion-padding">Categoría F</ion-title>
 
-  <ion-list lines="full" [inset]="true">
+  <ion-accordion-group>
     <ion-reorder-group [disabled]="false" (ionItemReorder)="handleReorder($any($event))">
-    <ion-item>
-      <ion-label>Noticia F1</ion-label>
-      <ion-checkbox></ion-checkbox>
-      <ion-buttons slot="end">
-        <ion-button ion-button clear [routerLink]=""><ion-icon name="create"></ion-icon></ion-button>
-        <ion-button ion-button clear [routerLink]=""><ion-icon name="trash"></ion-icon></ion-button>
-      </ion-buttons>
-      <ion-reorder slot="end"></ion-reorder>
-    </ion-item>
-    <ion-item>
-      <ion-label>Noticia F2</ion-label>
-      <ion-checkbox></ion-checkbox>
-      <ion-buttons slot="end">
-        <ion-button ion-button clear [routerLink]=""><ion-icon name="create"></ion-icon></ion-button>
-        <ion-button ion-button clear [routerLink]=""><ion-icon name="trash"></ion-icon></ion-button>
-      </ion-buttons>
-      <ion-reorder slot="end"></ion-reorder>
-    </ion-item>
-    <ion-item>
-      <ion-label>Noticia F3</ion-label>
-      <ion-checkbox></ion-checkbox>
-      <ion-buttons slot="end">
-        <ion-button ion-button clear [routerLink]=""><ion-icon name="create"></ion-icon></ion-button>
-        <ion-button ion-button clear [routerLink]=""><ion-icon name="trash"></ion-icon></ion-button>
-      </ion-buttons>
-      <ion-reorder slot="end"></ion-reorder>
-    </ion-item>
-    <ion-item>
-      <ion-label>Noticia F4</ion-label>
-      <ion-checkbox></ion-checkbox>
-      <ion-buttons slot="end">
-        <ion-button ion-button clear [routerLink]=""><ion-icon name="create"></ion-icon></ion-button>
-        <ion-button ion-button clear [routerLink]=""><ion-icon name="trash"></ion-icon></ion-button>
-      </ion-buttons>
-      <ion-reorder slot="end"></ion-reorder>
-    </ion-item>
-    <ion-item>
-      <ion-label>Noticia F5</ion-label>
-      <ion-checkbox></ion-checkbox>
-      <ion-buttons slot="end">
-        <ion-button ion-button clear [routerLink]=""><ion-icon name="create"></ion-icon></ion-button>
-        <ion-button ion-button clear [routerLink]=""><ion-icon name="trash"></ion-icon></ion-button>
-      </ion-buttons>
-      <ion-reorder slot="end"></ion-reorder>
-    </ion-item>
-    <ion-item>
-      <ion-label>Noticia F6</ion-label>
-      <ion-checkbox></ion-checkbox>
-      <ion-buttons slot="end">
-        <ion-button ion-button clear [routerLink]=""><ion-icon name="create"></ion-icon></ion-button>
-        <ion-button ion-button clear [routerLink]=""><ion-icon name="trash"></ion-icon></ion-button>
-      </ion-buttons>
-      <ion-reorder slot="end"></ion-reorder>
-    </ion-item>
+      <ion-item *ngFor="let nr of nchrchtn">
+        <ion-accordion>
+          <ion-item slot="header" color="light"><ion-label>{{nr.notcTitulo}}</ion-label></ion-item>
+          <p class="ion-padding" slot="content">{{nr.notcContenido}}</p>
+        </ion-accordion>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
     </ion-reorder-group>
-  </ion-list>
+  </ion-accordion-group>
 
 </ion-content>
 
 <ion-footer collapse="fade" class="ion-text-center">
   <ion-toolbar>
-    <ion-title slot="start" [routerLink]="['/home']">Inicio</ion-title><ion-menu-toggle><ion-title>Otras categorías</ion-title></ion-menu-toggle>
+    <ion-title slot="start" [routerLink]="['/home']">Inicio</ion-title><ion-menu-toggle><ion-title>Menú</ion-title></ion-menu-toggle>
   </ion-toolbar>
 </ion-footer>

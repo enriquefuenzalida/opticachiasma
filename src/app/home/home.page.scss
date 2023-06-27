@@ -31,9 +31,15 @@ ion-grid#portadaGrid ion-row ion-col {
   border: solid 1px #fff;
   color: #fff;
   text-align: center;
-  padding: 1em 0;
-  font-size: 5em;
+  padding: 1em;
+  font-size: 2em;
   font-weight: bold;
+}
+ion-grid#portadaGrid ion-row ion-col h3 {
+  font-size: 0.6em;
+}
+ion-grid#portadaGrid ion-row ion-col h2 {
+  font-size: 1em;
 }
 ion-grid#portadaGrid {
   --ion-grid-columns: 12;

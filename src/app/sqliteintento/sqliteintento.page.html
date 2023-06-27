@@ -1,0 +1,59 @@
+
+<ion-menu contentId="main-content">
+  <ion-content class="ion-padding">
+    <ion-title class="ion-padding">Menú</ion-title>
+    <ion-list>
+      <ion-item [routerLink]="['/categoriaa']" >JSON Interno Categoría A</ion-item>
+      <ion-item [routerLink]="['/categoriab']" >JSON Interno Categoría B</ion-item>
+      <ion-item [routerLink]="['/categoriac']" >JSON Interno Categoría C</ion-item>
+      <ion-item [routerLink]="['/categoriad']" >JSON Interno Categoría D</ion-item>
+      <ion-item [routerLink]="['/categoriae']" >JSON Interno Categoría E</ion-item>
+      <ion-item [routerLink]="['/categoriaf']" >JSON Interno Categoría F</ion-item>
+      <ion-item [routerLink]="['/externapi']">JSON Externo Typecode Posteos</ion-item>
+      <ion-item [routerLink]="['/fotoshot']">Cámara Foto Captura</ion-item>
+    </ion-list>
+  </ion-content>
+  <ion-footer class="ion-padding">
+    <ion-menu-toggle>
+      <ion-title size="large">Cerrar</ion-title></ion-menu-toggle>
+  </ion-footer>
+</ion-menu>
+
+<ion-header class="ion-text-center">
+  <ion-toolbar>
+    <ion-title><img src="../assets/imaginaciones/logotipo_corporativo-internacionalista.png" style="max-height: 89px;"/></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding" id="main-content">
+ 
+  <ion-title size="large" class="ion-padding">SQLite Intento</ion-title>
+
+
+  <ion-accordion-group>
+    <ion-reorder-group [disabled]="false" (ionItemReorder)="handleReorder($any($event))">
+      <ion-item *ngFor="let nr of nachrichtenArreglo">
+        <ion-accordion>
+          <ion-item slot="header" color="light"><ion-label>{{nr.notcTitulo}}</ion-label></ion-item>
+          <p class="ion-padding" slot="content">{{nr.notcContenido}}</p>
+        </ion-accordion>
+        <ion-buttons slot="end">
+          <ion-button ion-button clear (click)="modificar(nr)" ><ion-icon name="create"></ion-icon></ion-button>
+          <ion-button ion-button clear (click)="eliminar(nr.notcIdent)" ><ion-icon name="trash"></ion-icon></ion-button>
+        </ion-buttons>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+    </ion-reorder-group>
+  </ion-accordion-group>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-title size="small" [routerLink]="['/generar']">Agregar<br/>Noticia</ion-title> 
+  </ion-fab>
+
+</ion-content>
+
+<ion-footer collapse="fade" class="ion-text-center">
+  <ion-toolbar>
+    <ion-title slot="start" [routerLink]="['/home']">Inicio</ion-title><ion-menu-toggle><ion-title>Otras categorías</ion-title></ion-menu-toggle>
+  </ion-toolbar>
+</ion-footer>

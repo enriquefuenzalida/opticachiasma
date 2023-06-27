@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { GuardiaService } from './services/guardia.service';
 
 const routes: Routes = [
   {
@@ -38,6 +39,35 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'modificar',
+    loadChildren: () => import('./modificar/modificar.module').then( m => m.ModificarPageModule)
+  },
+  {
+    path: 'generar',
+    loadChildren: () => import('./generar/generar.module').then( m => m.GenerarPageModule)
+  },
+  {
+    path: 'externapi',
+    loadChildren: () => import('./externapi/externapi.module').then( m => m.ExternapiPageModule)
+  },
+  {
+    path: 'sqliteintento',
+    loadChildren: () => import('./sqliteintento/sqliteintento.module').then( m => m.SqliteintentoPageModule)
+  },
+  {
+    path: 'fotoshot',
+    loadChildren: () => import('./fotoshot/fotoshot.module').then( m => m.FotoshotPageModule)
+  },
+  {
+    path: 'externapidos',
+    loadChildren: () => import('./externapidos/externapidos.module').then( m => m.ExternapidosPageModule),
+    canActivate: [GuardiaService]
+  },
+  {
+    path: '**',
+    loadChildren: () => import('./paginacuatrocerocuatro/paginacuatrocerocuatro.module').then( m => m.PaginacuatrocerocuatroPageModule)
   },
 ];
 

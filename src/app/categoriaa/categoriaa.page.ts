@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ItemReorderEventDetail } from '@ionic/angular';
+import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-categoriaa',
@@ -7,7 +10,6 @@ import { ItemReorderEventDetail } from '@ionic/angular';
   styleUrls: ['./categoriaa.page.scss'],
 })
 export class CategoriaaPage implements OnInit {
-
   handleReorder(ev: CustomEvent<ItemReorderEventDetail>) {
     // The `from` and `to` properties contain the index of the item
     // when the drag started and ended, respectively
@@ -18,14 +20,40 @@ export class CategoriaaPage implements OnInit {
     // by the reorder group
     ev.detail.complete();
   }
-  constructor() { }
+
+  nchrchtn: any = [];
+
+  constructor(
+    private router: Router,
+    private http: HttpClient
+) { }
 
   ngOnInit() {
+
+    this.getNachrichten().subscribe(res=>{
+      console.log("Res",res)
+      this.nchrchtn = res;
+    });
+
   }
+
+
+  getNachrichten(){
+    return this.http
+    .get("assets/files/nachrichten.json")
+    .pipe(
+      map((res:any) =>{
+        return res.A;
+      })
+    )
+  }
+
+
 
 }
 
 export class ExampleComponent {
+
 }
 
 
