@@ -3,8 +3,7 @@
     <ion-title style="text-align: center;">
       <img src="../assets/imaginaciones/logotipo_corporativo-internacionalista.png" style="max-height: 144px; margin:0 auto;"/>
     </ion-title>
-    <h4 [hidden]="!(data.trim().length === 0)" style="text-align: center;">Usted ingresó sin nombre</h4>
-    <h4 [hidden]="(data.trim().length === 0)" style="text-align: center;">Usted ingresó con el nombre <em>{{ data }}</em></h4>
+    <h4 style="text-align: center;">Bienvenido<em [hidden]="(data.trim().length === 0)" style="text-align: center;"> {{ data }}</em></h4>
   </ion-toolbar>
 </ion-header>
 

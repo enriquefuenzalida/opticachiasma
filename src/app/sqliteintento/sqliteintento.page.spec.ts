@@ -5,7 +5,7 @@ describe('SqliteintentoPage', () => {
   let component: SqliteintentoPage;
   let fixture: ComponentFixture<SqliteintentoPage>;
 
-  beforeEach(async() => {
+  beforeEach(async () => {
     fixture = TestBed.createComponent(SqliteintentoPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
