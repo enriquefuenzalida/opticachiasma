@@ -1,11 +1,15 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { CategoriacPage } from './categoriac.page';
+import { HttpClient } from '@angular/common/http';
 
 describe('CategoriacPage', () => {
   let component: CategoriacPage;
   let fixture: ComponentFixture<CategoriacPage>;
 
   beforeEach(async() => {
+    TestBed.configureTestingModule({
+      imports: [HttpClient],
+    });
     fixture = TestBed.createComponent(CategoriacPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
