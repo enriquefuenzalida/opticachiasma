@@ -1,0 +1,23 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:amazon="http://schemas.amazon.com/apk/res/android"
+3    xmlns:android="http://schemas.android.com/apk/res/android"
+4    package="capacitor.cordova.android.plugins" >
+5
+6    <uses-sdk android:minSdkVersion="22" />
+6-->/Users/enrique/Desktop/nuevo comienzo/opticachiasma/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
+7
+8    <uses-permission android:name="android.permission.INTERNET" />
+8-->/Users/enrique/Desktop/nuevo comienzo/opticachiasma/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:7:1-62
+8-->/Users/enrique/Desktop/nuevo comienzo/opticachiasma/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:7:18-60
+9    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+9-->/Users/enrique/Desktop/nuevo comienzo/opticachiasma/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:8:1-74
+9-->/Users/enrique/Desktop/nuevo comienzo/opticachiasma/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:8:18-72
+10    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+10-->/Users/enrique/Desktop/nuevo comienzo/opticachiasma/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:9:1-76
+10-->/Users/enrique/Desktop/nuevo comienzo/opticachiasma/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:9:18-74
+11
+12    <application>
+12-->/Users/enrique/Desktop/nuevo comienzo/opticachiasma/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:4:1-6:15
+13    </application>
+14
+15</manifest>

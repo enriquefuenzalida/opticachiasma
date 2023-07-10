@@ -1,0 +1,6 @@
+io.ionic.starter.test.app-annotation-experimental-1.3.0-0 /Users/enrique/.gradle/caches/transforms-3/92958871dc9111d04192125c2f5a62ca/transformed/annotation-experimental-1.3.0/res
+io.ionic.starter.test.app-core-1.5.0-1 /Users/enrique/.gradle/caches/transforms-3/ddfee9cf7028f2410f01a64fc4739834/transformed/core-1.5.0/res
+io.ionic.starter.test.app-androidTest-2 /Users/enrique/Desktop/nuevo comienzo/opticachiasma/android/app/build/generated/res/resValues/androidTest/debug
+io.ionic.starter.test.app-mergeDebugAndroidTestResources-3 /Users/enrique/Desktop/nuevo comienzo/opticachiasma/android/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+io.ionic.starter.test.app-mergeDebugAndroidTestResources-4 /Users/enrique/Desktop/nuevo comienzo/opticachiasma/android/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+io.ionic.starter.test.app-merged_res-5 /Users/enrique/Desktop/nuevo comienzo/opticachiasma/android/app/build/intermediates/merged_res/debugAndroidTest

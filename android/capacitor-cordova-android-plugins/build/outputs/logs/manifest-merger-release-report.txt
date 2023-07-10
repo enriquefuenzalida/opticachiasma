@@ -1,0 +1,41 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/enrique/Desktop/Copia de opticachiasma-main/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:2:1-10:12
+INJECTED from /Users/enrique/Desktop/Copia de opticachiasma-main/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:2:1-10:12
+INJECTED from /Users/enrique/Desktop/Copia de opticachiasma-main/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:2:1-10:12
+	package
+		INJECTED from /Users/enrique/Desktop/Copia de opticachiasma-main/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
+		ADDED from /Users/enrique/Desktop/Copia de opticachiasma-main/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:2:1-10:12
+		INJECTED from /Users/enrique/Desktop/Copia de opticachiasma-main/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
+	xmlns:amazon
+		ADDED from /Users/enrique/Desktop/Copia de opticachiasma-main/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:3:1-57
+	xmlns:android
+		ADDED from /Users/enrique/Desktop/Copia de opticachiasma-main/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/enrique/Desktop/Copia de opticachiasma-main/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:4:1-6:15
+uses-permission#android.permission.INTERNET
+ADDED from /Users/enrique/Desktop/Copia de opticachiasma-main/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:7:1-62
+	android:name
+		ADDED from /Users/enrique/Desktop/Copia de opticachiasma-main/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:7:18-60
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/enrique/Desktop/Copia de opticachiasma-main/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:8:1-74
+	android:name
+		ADDED from /Users/enrique/Desktop/Copia de opticachiasma-main/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:8:18-72
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/enrique/Desktop/Copia de opticachiasma-main/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:9:1-76
+	android:name
+		ADDED from /Users/enrique/Desktop/Copia de opticachiasma-main/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:9:18-74
+uses-sdk
+INJECTED from /Users/enrique/Desktop/Copia de opticachiasma-main/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/enrique/Desktop/Copia de opticachiasma-main/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
+INJECTED from /Users/enrique/Desktop/Copia de opticachiasma-main/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
+INJECTED from /Users/enrique/Desktop/Copia de opticachiasma-main/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
+INJECTED from /Users/enrique/Desktop/Copia de opticachiasma-main/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/enrique/Desktop/Copia de opticachiasma-main/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
+		ADDED from /Users/enrique/Desktop/Copia de opticachiasma-main/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
+		INJECTED from /Users/enrique/Desktop/Copia de opticachiasma-main/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/enrique/Desktop/Copia de opticachiasma-main/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
+		ADDED from /Users/enrique/Desktop/Copia de opticachiasma-main/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
+		INJECTED from /Users/enrique/Desktop/Copia de opticachiasma-main/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
